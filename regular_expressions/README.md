@@ -1,6 +1,6 @@
 # Regular expressions
 
-[RU](#регулярнеы-выражения)
+[RU](#регулярные-выражения)
 
 A very nice place to explore them is regex101.com  
 Also here is a good guide: https://docs.python.org/3/howto/regex.html  
@@ -36,4 +36,4 @@ $ python main.py
 (['55', '6', '88'], ['+', '-'])
 ```
 
-Вы можете легко увидеть, как математические выражения разделяются на части здесь.
+Как видите, математические выражения разделяются на состовляющие их части.
