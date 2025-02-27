@@ -1,0 +1,35 @@
+%class Parser
+%package parser
+
+%start StateMap::start
+%map StateMap
+
+%%
+Default {
+  next unexpected {}
+}
+
+unexpected {}
+
+start {
+  next [ ctxt.peek().isdigit() ] number   { start_number(); consume(); }
+}
+
+number {
+  next [ ctxt.peek().isdigit() ] number   {                          consume(); }
+  next [ ctxt.peek() == "+" ]    operator { end_number(); save_op(); consume(); }
+  next [ ctxt.peek() == "-" ]    operator { end_number(); save_op(); consume(); }
+  next [ ctxt.peek() == "" ]     end      { end_number(); }
+}
+
+operator {
+  next [ ctxt.peek().isdigit() ] number_2 { start_number(); consume(); }
+}
+
+number_2 {
+  next [ ctxt.peek().isdigit() ] number_2 { consume(); }
+  next                           number   { }
+}
+
+end {}
+%%
