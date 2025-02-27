@@ -15,9 +15,11 @@ so if you know built-in `re`, you already can use `regex`.
 $ python main.py
 (['821'], [])
 (['55', '6', '88'], ['+', '-'])
+([], [])
+([], [])
 ```
 
-You can easily see how the math expressions are split into their parts here.
+You can easily see how the math expressions are split into their parts here. And how erronious inputs return just empty arrays.
 
 # Регулярные выражения
 
@@ -34,6 +36,8 @@ You can easily see how the math expressions are split into their parts here.
 $ python main.py
 (['821'], [])
 (['55', '6', '88'], ['+', '-'])
+([], [])
+([], [])
 ```
 
-Как видите, математические выражения разделяются на состовляющие их части.
+Как видите, математические выражения разделяются на состовляющие их части. И как вводные данные с ошибками превращаются в пустые массивы.

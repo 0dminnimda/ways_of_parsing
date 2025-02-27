@@ -20,9 +20,11 @@ Or you can just use their online playground: https://re2c.org/playground and cop
 $ python main.py
 (['821'], [])
 (['55', '6', '88'], ['+', '-'])
+([], [])
+([], [])
 ```
 
-You can easily see how the math expressions are split into their parts here.
+You can easily see how the math expressions are split into their parts here. And how erronious inputs return just empty arrays.
 
 # Генератор лексеров
 
@@ -46,6 +48,8 @@ re2c.exe parser.re --lang python -o parser.py
 $ python main.py
 (['821'], [])
 (['55', '6', '88'], ['+', '-'])
+([], [])
+([], [])
 ```
 
-Как видите, математические выражения разделяются на состовляющие их части.
+Как видите, математические выражения разделяются на состовляющие их части. И как вводные данные с ошибками превращаются в пустые массивы.
