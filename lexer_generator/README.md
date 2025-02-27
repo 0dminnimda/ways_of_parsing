@@ -11,7 +11,7 @@ This is the example for re2c, look into it's docs: https://re2c.org/manual/manua
 [`parser.re`](./parser.re) is a description of the parser, from it re2c generates [`parser.py`](./parser.py) which is the actual parser.
 
 ```console
-re2c.exe parser.re --lang python -o parser.py
+path/to/re2c parser.re --lang python -o parser.py
 ```
 
 Or you can just use their online playground: https://re2c.org/playground and copy paste the code, no need to install anything
@@ -39,7 +39,7 @@ You can easily see how the math expressions are split into their parts here. And
 [`parser.re`](./parser.re) — это описание парсера, из него re2c генерирует [`parser.py`](./parser.py), который и является фактическим парсером.
 
 ```console
-re2c.exe parser.re --lang python -o parser.py
+path/to/re2c parser.re --lang python -o parser.py
 ```
 
 Также можно просто сгенерировать онлайн: https://re2c.org/playground и ничего устанавливать не нужно
