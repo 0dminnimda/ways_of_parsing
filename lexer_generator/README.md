@@ -20,10 +20,10 @@ Or you can just use their online playground: https://re2c.org/playground and cop
 
 ```console
 $ python main.py
-(['821'], [])
-(['55', '6', '88'], ['+', '-'])
-([], [])
-([], [])
+821 -> ['821'] []
+55+6-88 -> ['55', '6', '88'] ['+', '-']
+821g -> [] []
+55+6-h -> [] []
 ```
 
 You can easily see how the math expressions are split into their parts here. And how erronious inputs return just empty arrays.
@@ -48,10 +48,10 @@ re2c.exe parser.re --lang python -o parser.py
 
 ```console
 $ python main.py
-(['821'], [])
-(['55', '6', '88'], ['+', '-'])
-([], [])
-([], [])
+821 -> ['821'] []
+55+6-88 -> ['55', '6', '88'] ['+', '-']
+821g -> [] []
+55+6-h -> [] []
 ```
 
 Как видите, математические выражения разделяются на состовляющие их части. И как вводные данные с ошибками превращаются в пустые массивы.
