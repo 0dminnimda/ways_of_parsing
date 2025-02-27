@@ -1,5 +1,7 @@
 # Lexer generator
 
+[RU](#генератор-лексеров)
+
 Usually descriptions of parsers are stored in a separate file and used in the main code. It's easier to deal with code generation in that way.
 
 This is the example for re2c, look into it's docs: https://re2c.org/manual/manual.html
