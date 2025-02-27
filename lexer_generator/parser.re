@@ -10,7 +10,6 @@ def get_math_expr_parts(text: str) -> tuple[list[str], list[str]]:
     re2c:YYMTAGP = "@@.append(yycursor)";
     re2c:YYMTAGN = ""; // do nothing
     re2c:yyfill:enable = 0;
-    re2c:encoding:utf8 = 1;
     re2c:indent:top = 1;
     re2c:tags = 1;
 
